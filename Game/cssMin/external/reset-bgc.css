@@ -1,1 +1,139 @@
-.bgcdw_login_container{width:auto}.bgc_signup_container,.bgcdw_login_container,.bgc_passwordReminder_container,#fb-connect-login-form-container,#pacman{border:0;margin:0;padding:0}.bgc{font-family:Arial,sans-serif;font-size:12px}.bgc .bgcdw_login_form_login div label,.bgc .bgc_login_form_authenticatorCode label{width:auto}.bgc fieldset div label{width:auto;line-height:1;float:none}.bgc fieldset div{clear:none;height:auto}.bgc .bgcdw_login_form_buttons{padding:0;margin:0;text-align:left}.bgc .bgcdw_login_container_remindpassword{margin:0;padding:0;text-align:left}.bgc input[type="text"],.bgc input[type="email"],.bgc input[type="password"]{border:0;float:none;padding:0;width:auto}.bgc a,.bgc a:link{font-size:12px;color:blue}.bgc_button,.bgcdw_button{border:0;padding:0;margin:0}.bgc div.bgcdw_errors{margin:0;padding:0;position:relative;right:0}.bgc input.bgcdw_errors[type="text"],.bgc input.bgcdw_errors[type="email"],.bgc input.bgcdw_errors[type="password"]{border:0;box-shadow:none}.bgc .bgc_signup_form_signup div label{width:auto}.bgc .bgcdw_date_fields .bgcdw_month_list{width:auto}.bgc .bgcdw_date_fields div{border:0;height:auto;padding:0;width:auto}.bgc .bgcdw_date_fields .bgcdw_day_list{width:auto}.bgc .bgcdw_date_fields select{border:0;padding:0;margin:0;width:auto;height:auto}.bgc .bgcdw_date_fields select option{padding:0}.bgc .bgcdw_date_fields .bgcdw_month_list{padding:0}.bgc .bgc_signup_form_legal{margin-top:-5px;margin-bottom:5px;margin-left:-10px}.bgc_signup_form_newsletterPartner{height:200px;display:block}.bgc_signup_form_legal input[type="checkbox"]{float:none}.bgc .bgc_signup_form_legal label{float:none;font-size:100%;line-height:1;margin:0;width:auto;display:inline}.bgc_signup_form_register{float:none}.bgc a,.bgca:link{color:#00e;font-size:100%}
+.bgcdw_login_container {
+    width: auto
+}
+
+.bgc_signup_container, .bgcdw_login_container, .bgc_passwordReminder_container, #fb-connect-login-form-container, #pacman {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+
+.bgc {
+    font-family: Arial,sans-serif;
+    font-size: 12px
+}
+
+    .bgc .bgcdw_login_form_login div label, .bgc .bgc_login_form_authenticatorCode label {
+        width: auto
+    }
+
+    .bgc fieldset div label {
+        width: auto;
+        line-height: 1;
+        float: none
+    }
+
+    .bgc fieldset div {
+        clear: none;
+        height: auto
+    }
+
+    .bgc .bgcdw_login_form_buttons {
+        padding: 0;
+        margin: 0;
+        text-align: left
+    }
+
+    .bgc .bgcdw_login_container_remindpassword {
+        margin: 0;
+        padding: 0;
+        text-align: left
+    }
+
+    .bgc input[type="text"], .bgc input[type="email"], .bgc input[type="password"] {
+        border: 0;
+        float: none;
+        padding: 0;
+        width: auto
+    }
+
+    .bgc a, .bgc a:link {
+        font-size: 12px;
+        color: blue
+    }
+
+.bgc_button, .bgcdw_button {
+    border: 0;
+    padding: 0;
+    margin: 0
+}
+
+.bgc div.bgcdw_errors {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    right: 0
+}
+
+.bgc input.bgcdw_errors[type="text"], .bgc input.bgcdw_errors[type="email"], .bgc input.bgcdw_errors[type="password"] {
+    border: 0;
+    box-shadow: none
+}
+
+.bgc .bgc_signup_form_signup div label {
+    width: auto
+}
+
+.bgc .bgcdw_date_fields .bgcdw_month_list {
+    width: auto
+}
+
+.bgc .bgcdw_date_fields div {
+    border: 0;
+    height: auto;
+    padding: 0;
+    width: auto
+}
+
+.bgc .bgcdw_date_fields .bgcdw_day_list {
+    width: auto
+}
+
+.bgc .bgcdw_date_fields select {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    height: auto
+}
+
+    .bgc .bgcdw_date_fields select option {
+        padding: 0
+    }
+
+.bgc .bgcdw_date_fields .bgcdw_month_list {
+    padding: 0
+}
+
+.bgc .bgc_signup_form_legal {
+    margin-top: -5px;
+    margin-bottom: 5px;
+    margin-left: -10px
+}
+
+.bgc_signup_form_newsletterPartner {
+    height: 200px;
+    display: block
+}
+
+.bgc_signup_form_legal input[type="checkbox"] {
+    float: none
+}
+
+.bgc .bgc_signup_form_legal label {
+    float: none;
+    font-size: 100%;
+    line-height: 1;
+    margin: 0;
+    width: auto;
+    display: inline
+}
+
+.bgc_signup_form_register {
+    float: none
+}
+
+.bgc a, .bgca:link {
+    color: #00e;
+    font-size: 100%
+}
