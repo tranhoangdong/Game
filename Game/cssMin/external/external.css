@@ -81,15 +81,13 @@ body #tile_right {
 
 #center_block {
     background-position: top center;
- /*   background-repeat: no-repeat;
-    background-size: cover;*/
-   /* background-attachment: fixed;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     width: 100%;
-    height: 70vh;
+    height: 100vh;
     margin: auto;
-    position: relative;
-    top: 5px ;
-    /*  overflow: hidden auto*/
+    overflow: hidden auto;
 }
 
 .home {
@@ -97,7 +95,7 @@ body #tile_right {
 }
 
 .home_variant_a {
-    background-image: url(/img/global/external/tiny/bg/bg.jpg?__cv=c3170cb80cb68185160d5a61e1c06600)
+    background-image: url(/img/global/external/tiny/bg/bg_resized.jpg?__cv=c3170cb80cb68185160d5a61e1c06600)
 }
 
 .page_client {
