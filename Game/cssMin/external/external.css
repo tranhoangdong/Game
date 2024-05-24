@@ -1,4 +1,4 @@
-body {
+﻿body {
   /*  background-color: #7aa70e;*/
     font-family: Arial,Helvetica,sans-serif;
     font-size: 12px;
@@ -95,7 +95,7 @@ body #tile_right {
 }
 
 .home_variant_a {
-    background-image: url(/img/global/external/tiny/bg/bg_resized.jpg?__cv=c3170cb80cb68185160d5a61e1c06600)
+    background-image: url(/img/global/external/tiny/bg/test2.jpg?__cv=c3170cb80cb68185160d5a61e1c06600)
 }
 
 .page_client {
@@ -1404,7 +1404,9 @@ body #tile_right {
         position: relative;
         width: 934px;
         height: 91px;
-        left: 24px
+        left: 24px;
+        top: -579px;
+        z-index: 999;
     }
 
         #externalHome .content .nav .button {
@@ -1459,7 +1461,7 @@ body #tile_right {
 
     #externalHome .content > div {
         position: relative;
-        width: 995px
+        width: 995px;
     }
 
     #externalHome .content .home {
@@ -1473,15 +1475,17 @@ body #tile_right {
     #externalHome .content .tour {
         height: 569px;
         position: relative;
-        top: -583px;
+        top: -409px;
     }
 
     #externalHome .content .media {
-        height: 1271px
+        height: 1271px;
+        top: -401px;
     }
 
     #externalHome .content .community {
-        height: 375px
+        height: 375px;
+        top: -400px;
     }
 
     #externalHome .content .title {
@@ -1517,18 +1521,34 @@ body #tile_right {
         }
 
         #externalHome .content .home .box-trailer .thumbnail-img {
-            background-image: url(/img/global/external/tiny/trailer_2016_preview.png?__cv=7ece77f7a5ef3caa9e0490480e6ee300);
+            background-image: url(/img/global/external/tiny/Capturetest.png);
             position: relative;
             left: -50px;
-            top: -200px;
+            top: -656px;
+            width: 164px;
+            height: 156px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 0px solid #000;
         }
 
         #externalHome .content .home .box-trailer .thumbnail-play {
-            cursor: pointer;
+          
             cursor: pointer;
             position: relative;
             left: -50px;
-            top: -410px;
+            top: -813px;
+            width: 158px;
+            height: 158px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+       
         }
 
             #externalHome .content .home .box-trailer .thumbnail-play:hover {
@@ -1538,28 +1558,35 @@ body #tile_right {
                 cursor: pointer;
                 position: relative;
                 left: -50px;
-                top: -410px;
-                display:block;  
+                top: -810px;
+                display: block;
             }
 
 .trailer-custom {
     position: relative;
-    left: -83px !important;
-    top: -208px !important;
+    left: -157px !important;
+    top: -446px !important;
+}
 }
 
+.box-screenshots {
+    top: -664px;
+    position: relative;
+    left: 143px;
+}
 #externalHome .content .home .box-screenshots {
     position: absolute;
-    top: -209px;
-    left: 285px;
+    top: -658px;
+    left: 113px;
     width: 454px;
-    height: 310px;
+    height: 295px;
 }
 
-        #externalHome .content .home .box-screenshots .title {
-            width: 384px;
-            left: 44px
-        }
+    #externalHome .content .home .box-screenshots .title {
+        width: 271px;
+        left: 42px;
+        top: 236px;
+    }
 
         #externalHome .content .home .box-screenshots .inner {
             position: relative
@@ -1592,7 +1619,15 @@ body #tile_right {
                     top: 0;
                     left: 10px;
                     width: 345px;
-                    height: 209px
+                    height: 209px;
+                    width: 158px;
+                    height: 158px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
                 }
 
                 #externalHome .content .home .box-screenshots .scrollable .item .zoom {
@@ -1600,7 +1635,15 @@ body #tile_right {
                     left: 10px;
                     width: 345px;
                     height: 209px;
-                    top: 0
+                    top: 0;
+                    width: 158px;
+                    height: 158px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  
                 }
 
                     #externalHome .content .home .box-screenshots .scrollable .item .zoom:hover {
@@ -1618,15 +1661,19 @@ body #tile_right {
             top: 110px;
             right: 17px
         }
-
-    #externalHome .content .home .box-facebook {
-        position: absolute;
-        top: 392px;
-        left: 16px;
-        width: 470px;
-        height: 370px;
-        display:none;
-    }
+.arrow-right-home {
+    left: 223px;
+    position: relative;
+    top: 100px;
+}
+#externalHome .content .home .box-facebook {
+    position: absolute;
+    top: 392px;
+    left: 16px;
+    width: 470px;
+    height: 370px;
+    display: none;
+}
 
         #externalHome .content .home .box-facebook .title {
             width: 286px;
@@ -2553,12 +2600,12 @@ body #tile_right {
 
 .firstloadsprite {
     background-repeat: no-repeat;
-    /*background-image: url(/img/global/external/tiny/firstload0.png?__cv=7ce9ba7082abe5b3bf3738be4f6b4f00)*/
+    background-image: url(/img/global/external/tiny/firstload0.png?__cv=7ce9ba7082abe5b3bf3738be4f6b4f00)
 }
 
 .contentsprite0 {
     background-repeat: no-repeat;
-   /* background-image: url(/img/global/external/tiny/content0.png?__cv=791e372d8a4f48e1e248a1f21d8c4c00)*/
+    background-image: url(/img/global/external/tiny/content0.png?__cv=791e372d8a4f48e1e248a1f21d8c4c00)
 }
 
 .contentsprite1 {
@@ -2679,7 +2726,7 @@ body #tile_right {
 .fl_btn_right {
     width: 36px;
     height: 59px;
-    background-position: -936px -850px
+    background-position: -936px -850px;
 }
 
 .fl_btn_social {
@@ -2902,7 +2949,8 @@ body #tile_right {
 .l_assets {
     width: 861px;
     height: 520px;
-    background-position: -2px -531px
+    background-position: -2px -531px;
+    top: 245px;
 }
 
 .l_btn_close {
@@ -2920,7 +2968,8 @@ body #tile_right {
 .l_video {
     width: 872px;
     height: 527px;
-    background-position: -2px -2px
+    background-position: -2px -2px;
+    top: 271px;
 }
 
 .l_pwrecovery {
