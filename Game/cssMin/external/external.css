@@ -1262,7 +1262,7 @@ body #tile_right {
     #externalHome .fbconnect {
         position: absolute;
         top: 5px;
-        left: 429px
+        left: 500px
     }
 
     #externalHome .reg .typo-funny-game {
@@ -1405,7 +1405,7 @@ body #tile_right {
         position: relative;
         width: 934px;
         height: 91px;
-        left: 24px;
+        left: 95px;
         top: -579px;
         z-index: 999;
     }
@@ -1477,16 +1477,19 @@ body #tile_right {
         height: 569px;
         position: relative;
         top: -409px;
+        left: 79px;
     }
 
     #externalHome .content .media {
         height: 1271px;
         top: -401px;
+        left: 96px;
     }
 
     #externalHome .content .community {
         height: 375px;
         top: -400px;
+        left: 96px;
     }
 
     #externalHome .content .title {
