@@ -25,15 +25,16 @@ input.placeholder {
 
 #story-inner {
     position: relative;
-    top: 30px;
-    left: 30px;
+    top: -343px;
+    left: 144px;
     z-index: 10;
-    width: 364px;
-    height: 224px;
+    width: 692px;
+    height: 353px;
     color: #f1ddba;
     overflow-y: scroll;
     overflow-x: hidden;
-    padding: 5px
+    padding: 5px;
+    background-position: -93px -625px;
 }
 
 #layer-accountCenter {
@@ -1574,6 +1575,11 @@ body #tile_right {
     position: relative;
     left: 143px;
 }
+.box-screenshots2 {
+    top: -304px;
+    position: relative;
+    left: 203px;
+}
 #externalHome .content .home .box-screenshots {
     position: absolute;
     top: -658px;
@@ -1672,7 +1678,7 @@ body #tile_right {
     left: 16px;
     width: 470px;
     height: 370px;
-    display: none;
+    
 }
 
         #externalHome .content .home .box-facebook .title {
@@ -1701,6 +1707,7 @@ body #tile_right {
             height: 250px
         }
 
+        }
 #externalHome .content .home .box-story {
     position: absolute;
     top: -209px;
@@ -1714,13 +1721,13 @@ body #tile_right {
             left: 78px
         }
 
-    #externalHome .content .tour .box-tour {
-        position: absolute;
-        top: 28px;
-        left: 20px;
-        width: 960px;
-        height: 520px
-    }
+#externalHome .content .tour .box-tour {
+    position: absolute;
+    top: 28px;
+    left: 20px;
+    width: 960px;
+    height: 520px
+}
 
         #externalHome .content .tour .box-tour .title {
             width: 308px;
