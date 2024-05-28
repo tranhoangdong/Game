@@ -29,20 +29,20 @@
 
 
     <script>
-	function checkMyCookies() {
+        function checkMyCookies() {
 
-	    var cookieLeMess = 'Please activate cookies for your browser.';
+            var cookieLeMess = 'Please activate cookies for your browser.';
 
-		var cookieEnabled=(navigator.cookieEnabled)? '' : cookieLeMess
+            var cookieEnabled = (navigator.cookieEnabled) ? '' : cookieLeMess
 
-		//if not IE4+ nor NS6+
-		if (typeof navigator.cookieEnabled =="undefined" && !cookieEnabled){
+            //if not IE4+ nor NS6+
+            if (typeof navigator.cookieEnabled == "undefined" && !cookieEnabled) {
 
-			cookieEnabled=(document.cookie.indexOf("testcookie")!=-1)? '' : cookieLeMess
-		}
+                cookieEnabled = (document.cookie.indexOf("testcookie") != -1) ? '' : cookieLeMess
+            }
 
-		return cookieEnabled;
-	}
+            return cookieEnabled;
+        }
     </script>
     <noscript><div id="noScript">Please activate Java Script for your browser.</div></noscript>
 
@@ -67,30 +67,23 @@
 
         #externalHome .content .nav .hometab a {
             background-image: url(img/en_US/landing/typo_nav_home.png);
-        
         }
 
         #externalHome .content .nav .tourtab a {
             background-image: url(img/en_US/landing/typo_nav_gametour.png);
-          
         }
 
         #externalHome .content .nav .mediatab a {
             background-image: url(img/en_US/landing/typo_nav_media.png);
-          
         }
 
         #externalHome .content .nav .newstab a {
             background-image: url(img/en_US/landing/typo_nav_news.png);
-          
         }
+
         #externalHome .content .nav .communitytab a {
             background-image: url("img/typo_nav_community.png");
-          
         }
-
-
-
     </style>
 
 
@@ -99,10 +92,9 @@
             <div class=" firstloadsprite">
                 <div class="login">
                     <div class="bgcdw_login_container bgc">
-                       
+
                         <div class="bgcdw_login_container_form">
                             <form name="bgcdw_login_form" method="post" class="bgcdw_login_form" action="https://sas.bpsecure.com/Sas/Authentication/Bigpoint?authUser=171&amp;token=YPx0HsOSqafJAgq1--570jNPvbWli0wImw4ZPXT28K_hqQZobQ1q04rAKMki-MTQPsHf-qctedA0uH22n5Dt6Ec2TZArzKLNlMlAY27WIgl_NMoK-vtawxwuLUe1bdbhg1Vnu0e71Dyx6kPe3y0kspoRA5aeioT3pKzxd4qXmqZVURmp5ew3HDC83R4qMa2rOddUtdPFSYMKYcuNn20KluUOuFB4wMLAvPavaHORwYGpH_9LQuc9jXy7ZdD86qXtChwRHF12Ilm5_Eqmg8Fo-3Bt6lyZawGIGkag4M_AXnxaRXWMIi7EtJOgYw8oQ_QsZ14rpAivZdwO5IsrS6QhqUUikAyTp8Xuc6MSOLw3U4F536_m6Rk2Ci4m-RU0ZYlS">
-                               
                             </form>
                         </div>
                     </div>
@@ -156,7 +148,7 @@
                                 <div data-error-key="bgc.error.termsAndConditions_notAccepted">Please confirm that you have accepted our Terms & Conditions and our Data Privacy Policy. Afterwards, you may continue with your registration.</div>
                             </div>
 
-                          
+
                         </form>
                     </div>
                 </div>
@@ -165,16 +157,16 @@
             </div>
 
             <div class="logo firstloadsprite fl_logo"></div>
-           
+
             <div class="content " id="content">
                 <div class="nav fl_nav_bg button-custom ">
                     <div class=" fl_button button hometab active"><a id="btnNavHome"></a></div>
                     <div class=" fl_button button tourtab"><a id="btnNavTour"></a></div>
                     <div class=" fl_button button mediatab"><a id="btnNavMedia"></a></div>
-                    <div class=" fl_button button newstab"><a id="btnNavNews" x-href="/GameAPI.php?action=portal.redirectToBoard"></a></div>
+                    <div class=" fl_button button newstab"><a id="btnNavNews" x-href="http://localhost:8080/xenforo/upload/index.php?threads/hello.1/"></a></div>
                     <div class=" fl_button button communitytab"><a id="btnNavCommunity"></a> </div>
                 </div>
-               
+
                 <div class="home  c_boxes_home" id="boxesHome">
                     <div class="box-trailer">
                         <div class="title trailer-custom"><img src="img/en_US/landing/typo_header_trailer.png" /></div>
@@ -196,12 +188,16 @@
                                 </div>
                             </div>
 
-                            <div class="firstloadsprite fl_btn_right arrow-right-home" id="home-screenshots-right" > </div>
+                            <div class="firstloadsprite fl_btn_right arrow-right-home" id="home-screenshots-right"> </div>
                         </div>
                     </div>
 
-                    <div class="box-facebook">
+                    <div class="box-Facebook-custom "><img src="img/typo_header_facebook.png" /></div>
+                    <img id="showButton" src="img/landing/ver2/additionals/small/tiny/artworks/artwork_farmerama_fish_thumbnail.jpg" alt="Show Facebook Content"/>
+
+                    <div class="box-facebook box-facebook-custom" id="box-facebook">
                         <div class="title">
+                            <img id="hide-facebook-btn" src="img/btn-xoa.jpg" alt="Hide Content Button">
                             <img src="img/typo_header_facebook.png" />
                         </div>
 
@@ -212,10 +208,35 @@
                         </div>
                     </div>
 
-                    <div class="box-story" id="box-story">
-                        <div class="title"><img src="img/en_US/landing/typo_header_story.png" /></div>
-                        <div class="story-inner" id="story-inner"><h1>Play FARMERAMA - Cutest Farm Game Online!</h1><p>Embrace rural living and be a virtual farmer in the delightful online game world of Farmerama.</p> <h2>Free-To-Play Browser-Based Virtual Farm</h2> <p>No Downloads Required! Start your virtual game of online farming now with your own digital patch of land, a farmhouse, mill and big barn. </p> <h2>Online Simulation Farm Game</h2> <p>Work your land plowing fields, sowing seeds and watering to grow a variety of flowers, vegetables and grains to fill orders at the market place. Time your crops to harvest in quick bursts throughout your day.</p> <h2>Raise Cute Farm Animals</h2> <p>Raise chickens, rabbits, goats, sheep and cattle.Raise pigs, turkeys, bees, horses and a variety of other cute productive animals on your farm.</p> <h2>Sell and Trade Your Harvest</h2> <p>Sell your harvest at the market or in the city to make money to buy farming equipment to make for an easier harvest, seeds to grow more crops, to buy animals, trees and other farming supplies. </p> <h2>Decorate Your Farm</h2> <p>Fix up your homestead with decorations and put it on display for visitors to enjoy and rate.</p></div>
+                   
+
+
+
+                    <div class="box-story-custom "><img src="img/en_US/landing/typo_header_story.png" /></div>
+
+                    <img id="image-button" src="img/landing/ver2/additionals/big/tiny/home/screenshot_city_big.jpg" alt="Show Content Button">
+                    <div class="box-story " id="box-story">
+                        <div class="title  story-inner-custom">
+                            <img src="img/en_US/landing/typo_header_story.png" />
+                            <img id="hide-content-btn" src="img/btn-xoa.jpg" alt="Hide Content Button">
+                        </div>
+                        <div class="story-inner layersprite0" id="story-inner">
+                            <h1>Play FARMERAMA - Cutest Farm Game Online!</h1>
+                            <p>Embrace rural living and be a virtual farmer in the delightful online game world of Farmerama.</p>
+                            <h2>Free-To-Play Browser-Based Virtual Farm</h2>
+                            <p>No Downloads Required! Start your virtual game of online farming now with your own digital patch of land, a farmhouse, mill and big barn.</p>
+                            <h2>Online Simulation Farm Game</h2>
+                            <p>Work your land plowing fields, sowing seeds and watering to grow a variety of flowers, vegetables and grains to fill orders at the market place. Time your crops to harvest in quick bursts throughout your day.</p>
+                            <h2>Raise Cute Farm Animals</h2>
+                            <p>Raise chickens, rabbits, goats, sheep and cattle. Raise pigs, turkeys, bees, horses and a variety of other cute productive animals on your farm.</p>
+                            <h2>Sell and Trade Your Harvest</h2>
+                            <p>Sell your harvest at the market or in the city to make money to buy farming equipment to make for an easier harvest, seeds to grow more crops, to buy animals, trees and other farming supplies.</p>
+                            <h2>Decorate Your Farm</h2>
+                            <p>Fix up your homestead with decorations and put it on display for visitors to enjoy and rate.</p>
+                        </div>
                     </div>
+
+
                 </div>
 
                 <div class="tour hidden contentsprite1 c_boxes_tour" id="boxesTour">
@@ -471,360 +492,458 @@
 
 
     <script>
-$(document).ready(function() {
-    FaExternalHome.setTranslation('username', 'Username');
-    FaExternalHome.setTranslation('password', 'Password');
-    FaExternalHome.setTranslation('download', 'Download');
+        $(document).ready(function () {
+            FaExternalHome.setTranslation('username', 'Username');
+            FaExternalHome.setTranslation('password', 'Password');
+            FaExternalHome.setTranslation('download', 'Download');
 
-    FaExternalHome.setTourCount(8);
+            FaExternalHome.setTourCount(8);
 
-    FaExternalHome.addPreload(
-          'img/global/external/tiny/content1.png?__cv=3db55c5fac175a5536220b81c2bf7a00'
-    );
-
-
-        FaExternalHome.addArtwork(
-        'img/landing/ver2/additionals/small/tiny/artworks/artwork_preloader_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/artworks/artwork_preloader_big.jpg'
-        );
-        FaExternalHome.addArtwork(
-        'img/landing/ver2/additionals/small/tiny/artworks/artwork_dinner_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/artworks/artwork_dinner_big.jpg'
-        );
-        FaExternalHome.addArtwork(
-        'img/landing/ver2/additionals/small/tiny/artworks/artwork_farmerama_camel_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/artworks/artwork_farmerama_camel_big.jpg'
-        );
-        FaExternalHome.addArtwork(
-        'img/landing/ver2/additionals/small/tiny/artworks/artwork_farmerama_dog_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/artworks/artwork_farmerama_dog_big.jpg'
-        );
-        FaExternalHome.addArtwork(
-        'img/landing/ver2/additionals/small/tiny/artworks/artwork_farmerama_fish_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/artworks/artwork_farmerama_fish_big.jpg'
-        );
-        FaExternalHome.addArtwork(
-        'img/landing/ver2/additionals/small/tiny/artworks/artwork_farmerama_fox__thumbnail.jpg',
-        'img/landing/ver2/additionals/big/artworks/artwork_farmerama_fox__big.jpg'
-        );
-        FaExternalHome.addArtwork(
-        'img/landing/ver2/additionals/small/tiny/artworks/artwork_farmerama_monkey_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/artworks/artwork_farmerama_monkey_big.jpg'
-        );
-        FaExternalHome.addArtwork(
-        'img/landing/ver2/additionals/small/tiny/artworks/artwork_boxontherocks_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/artworks/artwork_boxontherocks_big.jpg'
-        );
-        FaExternalHome.addArtwork(
-        'img/landing/ver2/additionals/small/tiny/artworks/artwork_halloween_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/artworks/artwork_halloween_big.jpg'
-        );
-        FaExternalHome.addArtwork(
-        'img/landing/ver2/additionals/small/tiny/artworks/artwork_oxcar_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/artworks/artwork_oxcar_big.jpg'
-        );
-        FaExternalHome.addArtwork(
-        'img/landing/ver2/additionals/small/tiny/artworks/artwork_xmas_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/artworks/artwork_xmas_big.jpg'
-        );
-
-    FaExternalHome.addScreenshot(
-        'img/landing/ver2/additionals/small/tiny/home/screenshot_newbahamarama01_small_.jpg',
-        'img/landing/ver2/additionals/small/tiny/media/screenshot_newbahamarama01_thumbnail.jpg',
-       'img/landing/ver2/additionals/big/tiny/home/screenshot_newbahamarama01_big.png'
-        );
-        FaExternalHome.addScreenshot(
-        'img/landing/ver2/additionals/small/tiny/home/screenshot_newbahamarama02_small.jpg',
-        'img/landing/ver2/additionals/small/tiny/media/screenshot_newbahamarama02_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/tiny/home/screenshot_newbahamarama02_big.png'
-        );
-        FaExternalHome.addScreenshot(
-        'img/landing/ver2/additionals/small/tiny/home/screenshot_main_farm_small.jpg',
-        'img/landing/ver2/additionals/small/tiny/media/screenshot_main_farm_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/tiny/home/screenshot_main_farm_big.jpg'
-        );
-        FaExternalHome.addScreenshot(
-        'img/landing/ver2/additionals/small/tiny/home/screenshot_city_small.jpg',
-        'img/landing/ver2/additionals/small/tiny/media/screenshot_city_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/tiny/home/screenshot_city_big.jpg'
-        );
-        FaExternalHome.addScreenshot(
-        'img/landing/ver2/additionals/small/tiny/home/screenshot_wild_meadow_small.jpg',
-        'img/landing/ver2/additionals/small/tiny/media/screenshot_wild_meadow_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/tiny/home/screenshot_wild_meadow_big.jpg'
-        );
-        FaExternalHome.addScreenshot(
-        'img/landing/ver2/additionals/small/tiny/home/screenshot_magical_glade_small.jpg',
-        'img/landing/ver2/additionals/small/tiny/media/screenshot_magical_glade_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/tiny/home/screenshot_magical_glade_big.jpg'
-        );
-        FaExternalHome.addScreenshot(
-        'img/landing/ver2/additionals/small/tiny/home/screenshot_crafting_city_small.jpg',
-        'img/landing/ver2/additionals/small/tiny/media/screenshot_crafting_city_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/tiny/home/screenshot_crafting_city_big.jpg'
-        );
-        FaExternalHome.addScreenshot(
-        'img/landing/ver2/additionals/small/tiny/home/screenshot_user_02_small.jpg',
-        'img/landing/ver2/additionals/small/tiny/media/screenshot_user_02_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/tiny/home/screenshot_user_02_big.jpg'
-        );
-        FaExternalHome.addScreenshot(
-        'img/landing/ver2/additionals/small/tiny/home/screenshot_user_03_small.jpg',
-        'img/landing/ver2/additionals/small/tiny/media/screenshot_user_03_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/tiny/home/screenshot_user_03_big.jpg'
-        );
-        FaExternalHome.addScreenshot(
-        'img/landing/ver2/additionals/small/tiny/home/screenshot_user_04_small.jpg',
-        'img/landing/ver2/additionals/small/tiny/media/screenshot_user_04_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/tiny/home/screenshot_user_04_big.jpg'
-        );
-        FaExternalHome.addScreenshot(
-        'img/landing/ver2/additionals/small/tiny/home/screenshot_user_05_small.jpg',
-        'img/landing/ver2/additionals/small/tiny/media/screenshot_user_05_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/tiny/home/screenshot_user_05_big.jpg'
-        );
-        FaExternalHome.addScreenshot(
-        'img/landing/ver2/additionals/small/tiny/home/screenshot_user_06_small.jpg',
-        'img/landing/ver2/additionals/small/tiny/media/screenshot_user_06_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/tiny/home/screenshot_user_06_big.jpg'
-        );
-        FaExternalHome.addScreenshot(
-        'img/landing/ver2/additionals/small/tiny/home/screenshot_user_07_small.jpg',
-        'img/landing/ver2/additionals/small/tiny/media/screenshot_user_07_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/tiny/home/screenshot_user_07_big.jpg'
-        );
-        FaExternalHome.addScreenshot(
-        'img/landing/ver2/additionals/small/tiny/home/screenshot_user_08_small.jpg',
-        'img/landing/ver2/additionals/small/tiny/media/screenshot_user_08_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/tiny/home/screenshot_user_08_big.jpg'
-        );
-        FaExternalHome.addScreenshot(
-        'img/landing/ver2/additionals/small/tiny/home/screenshot_user_09_small.jpg',
-        'img/landing/ver2/additionals/small/tiny/media/screenshot_user_09_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/tiny/home/screenshot_user_09_big.jpg'
-        );
-        FaExternalHome.addScreenshot(
-        'img/landing/ver2/additionals/small/tiny/home/screenshot_user_10_small.jpg',
-        'img/landing/ver2/additionals/small/tiny/media/screenshot_user_10_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/tiny/home/screenshot_user_10_big.jpg'
-        );
-        FaExternalHome.addScreenshot(
-        'img/landing/ver2/additionals/small/tiny/home/screenshot_user_11_small.jpg',
-        'img/landing/ver2/additionals/small/tiny/media/screenshot_user_11_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/tiny/home/screenshot_user_11_big.jpg'
-        );
-        FaExternalHome.addScreenshot(
-        'img/landing/ver2/additionals/small/tiny/home/screenshot_user_12_small.jpg',
-        'img/landing/ver2/additionals/small/tiny/media/screenshot_user_12_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/tiny/home/screenshot_user_12_big.jpg'
-        );
-
-        FaExternalHome.addVideo(
-        'img/landing/ver2/additionals/small/tiny/podcasts/thumbnail_raccoonballoon.jpg', 'J2l9w4pEZDw'
-        );
-        FaExternalHome.addVideo(
-        'img/landing/ver2/additionals/small/tiny/podcasts/thumbnail_indycat.jpg', 'rPzGheji3Uo'
-        );
-        FaExternalHome.addVideo(
-        'img/landing/ver2/additionals/small/tiny/podcasts/thumbnail_dailylogin.jpg', '0jnuPD5FMBs'
-        );
-        FaExternalHome.addVideo(
-        'img/landing/ver2/additionals/small/tiny/podcasts/thumbnail_malala.jpg', '4FwaAvTUbvg'
-        );
-        FaExternalHome.addVideo(
-        'img/landing/ver2/additionals/small/tiny/podcasts/thumbnail_storagequarter.jpg', '3ll2FdIf0Uw'
-        );
-
-        FaExternalHome.addWallpaper(
-        'img/landing/ver2/additionals/small/tiny/wallpaper/Farmerama_Cats_Wallpaper_1_Thumbnail.jpg',
-        'img/landing/ver2/additionals/big/wallpaper/Farmerama_Cats_Wallpaper_1.jpg'
-        );
-        FaExternalHome.addWallpaper(
-        'img/landing/ver2/additionals/small/tiny/wallpaper/Farmerama_Fishing_Wallpaper_1_Thumbnail.jpg',
-        'img/landing/ver2/additionals/big/wallpaper/Farmerama_Fishing_Wallpaper_1.jpg'
-        );
-        FaExternalHome.addWallpaper(
-        'img/landing/ver2/additionals/small/tiny/wallpaper/Farmerama_Fishing_Wallpaper_2_Thumbnail.jpg',
-        'img/landing/ver2/additionals/big/wallpaper/Farmerama_Fishing_Wallpaper_2.jpg'
-        );
-        FaExternalHome.addWallpaper(
-        'img/landing/ver2/additionals/small/tiny/wallpaper/valentine2015wallpaper_thumb.jpg',
-        'img/landing/ver2/additionals/big/wallpaper/valentine2015wallpaper.jpg'
-        );
-        FaExternalHome.addWallpaper(
-        'img/landing/ver2/additionals/small/tiny/wallpaper/xmas2014_wallpaper_thumbnail.png',
-        'img/landing/ver2/additionals/big/wallpaper/xmas2014_wallpaper.png'
-        );
-        FaExternalHome.addWallpaper(
-        'img/landing/ver2/additionals/small/tiny/wallpaper/hw2014_wallpaper_icon.jpg',
-        'img/landing/ver2/additionals/big/wallpaper/hw2014_wallpaper_final.jpg'
-        );
-        FaExternalHome.addWallpaper(
-        'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_summer2014_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/wallpaper/wallpaper_summer2014.jpg'
-        );
-        FaExternalHome.addWallpaper(
-        'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_valentine2014_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/wallpaper/wallpaper_valentine2014.jpg'
-        );
-        FaExternalHome.addWallpaper(
-        'img/landing/ver2/additionals/small/tiny/wallpaper/small_xmas2013_wallpaper.jpg',
-        'img/landing/ver2/additionals/big/wallpaper/xmas2013_wallpaper_big.jpg'
-        );
-        FaExternalHome.addWallpaper(
-        'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_vitruvian_man_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/wallpaper/wallpaper_vitruvian_man.jpg'
-        );
-        FaExternalHome.addWallpaper(
-        'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_monalisa_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/wallpaper/wallpaper_monalisa.jpg'
-        );
-        FaExternalHome.addWallpaper(
-        'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_escher_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/wallpaper/wallpaper_escher.jpg'
-        );
-        FaExternalHome.addWallpaper(
-        'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_chatnoir_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/wallpaper/wallpaper_chatnoir.jpg'
-        );
-        FaExternalHome.addWallpaper(
-        'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_bunnylin_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/wallpaper/wallpaper_bunnylin.jpg'
-        );
-        FaExternalHome.addWallpaper(
-        'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper-valentine2013_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/wallpaper/wallpaper-valentine2013.jpg'
-        );
-        FaExternalHome.addWallpaper(
-        'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_valentine2013_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/wallpaper/wallpaper_valentine2013.jpg'
-        );
-        FaExternalHome.addWallpaper(
-        'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_halloween2012_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/wallpaper/wallpaper_halloween2012.jpg'
-        );
-        FaExternalHome.addWallpaper(
-        'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_ufo01_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/wallpaper/wallpaper_ufo01.jpg'
-        );
-        FaExternalHome.addWallpaper(
-        'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_ufo02_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/wallpaper/wallpaper_ufo02.jpg'
-        );
-        FaExternalHome.addWallpaper(
-        'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_jahrmarkt01_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/wallpaper/wallpaper_jahrmarkt01.jpg'
-        );
-        FaExternalHome.addWallpaper(
-        'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_jahrmarkt02_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/wallpaper/wallpaper_jahrmarkt02.jpg'
-        );
-        FaExternalHome.addWallpaper(
-        'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_jahrmarkt04_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/wallpaper/wallpaper_jahrmarkt04.jpg'
-        );
-        FaExternalHome.addWallpaper(
-        'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_jahrmarkt05_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/wallpaper/wallpaper_jahrmarkt05.jpg'
-        );
-        FaExternalHome.addWallpaper(
-        'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_valentine_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/wallpaper/wallpaper_valentine.jpg'
-        );
-        FaExternalHome.addWallpaper(
-        'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_preloader_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/wallpaper/wallpaper_preloader.jpg'
-        );
-        FaExternalHome.addWallpaper(
-        'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_01_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/wallpaper/wallpaper_01.jpg'
-        );
-        FaExternalHome.addWallpaper(
-        'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_02_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/wallpaper/wallpaper_02.jpg'
-        );
-        FaExternalHome.addWallpaper(
-        'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_03_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/wallpaper/wallpaper_03.jpg'
-        );
-        FaExternalHome.addWallpaper(
-        'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_04_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/wallpaper/wallpaper_04.jpg'
-        );
-        FaExternalHome.addWallpaper(
-        'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_05_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/wallpaper/wallpaper_05.jpg'
-        );
-        FaExternalHome.addWallpaper(
-        'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_06_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/wallpaper/wallpaper_06.jpg'
-        );
-        FaExternalHome.addWallpaper(
-        'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_advenskalender_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/wallpaper/wallpaper_advenskalender.jpg'
-        );
-        FaExternalHome.addWallpaper(
-        'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_babybunnies_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/wallpaper/wallpaper_babybunnies.jpg'
-        );
-        FaExternalHome.addWallpaper(
-        'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_Fledermausbabys_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/wallpaper/wallpaper_Fledermausbabys.jpg'
-        );
-        FaExternalHome.addWallpaper(
-        'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_Nikolaus_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/wallpaper/wallpaper_Nikolaus.jpg'
-        );
-        FaExternalHome.addWallpaper(
-        'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_oscar2012_thumbnail.jpg',
-        'img/landing/ver2/additionals/big/wallpaper/wallpaper_oscar2012.jpg'
-        );
-
-    FaExternalHome.init();
-
-
-
-
-    if ($('#owl_winking')) {
-        swfobject.embedSWF(
-            '/swf/landing/bahamarama/parrot.swf?__cv=cab56d81c07d5d31536cf8d1ff4c2d00',
-            'owl_winking',
-            '273',
-            '266',
-            '9.0.0',
-            '/swf/expressInstall.swf?__cv=7b65fbfaec8b2955090389af60646e00',
-            null,
-            {
-                wmode: "transparent"
-            }
+            FaExternalHome.addPreload(
+                'img/global/external/tiny/content1.png?__cv=3db55c5fac175a5536220b81c2bf7a00'
             );
-    }
-});
 
-$(window).on('load', function() {
-    FaExternalHome.preloadImages();
-})
+
+            FaExternalHome.addArtwork(
+                'img/landing/ver2/additionals/small/tiny/artworks/artwork_preloader_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/artworks/artwork_preloader_big.jpg'
+            );
+            FaExternalHome.addArtwork(
+                'img/landing/ver2/additionals/small/tiny/artworks/artwork_dinner_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/artworks/artwork_dinner_big.jpg'
+            );
+            FaExternalHome.addArtwork(
+                'img/landing/ver2/additionals/small/tiny/artworks/artwork_farmerama_camel_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/artworks/artwork_farmerama_camel_big.jpg'
+            );
+            FaExternalHome.addArtwork(
+                'img/landing/ver2/additionals/small/tiny/artworks/artwork_farmerama_dog_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/artworks/artwork_farmerama_dog_big.jpg'
+            );
+            FaExternalHome.addArtwork(
+                'img/landing/ver2/additionals/small/tiny/artworks/artwork_farmerama_fish_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/artworks/artwork_farmerama_fish_big.jpg'
+            );
+            FaExternalHome.addArtwork(
+                'img/landing/ver2/additionals/small/tiny/artworks/artwork_farmerama_fox__thumbnail.jpg',
+                'img/landing/ver2/additionals/big/artworks/artwork_farmerama_fox__big.jpg'
+            );
+            FaExternalHome.addArtwork(
+                'img/landing/ver2/additionals/small/tiny/artworks/artwork_farmerama_monkey_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/artworks/artwork_farmerama_monkey_big.jpg'
+            );
+            FaExternalHome.addArtwork(
+                'img/landing/ver2/additionals/small/tiny/artworks/artwork_boxontherocks_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/artworks/artwork_boxontherocks_big.jpg'
+            );
+            FaExternalHome.addArtwork(
+                'img/landing/ver2/additionals/small/tiny/artworks/artwork_halloween_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/artworks/artwork_halloween_big.jpg'
+            );
+            FaExternalHome.addArtwork(
+                'img/landing/ver2/additionals/small/tiny/artworks/artwork_oxcar_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/artworks/artwork_oxcar_big.jpg'
+            );
+            FaExternalHome.addArtwork(
+                'img/landing/ver2/additionals/small/tiny/artworks/artwork_xmas_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/artworks/artwork_xmas_big.jpg'
+            );
+
+            FaExternalHome.addScreenshot(
+                'img/landing/ver2/additionals/small/tiny/home/screenshot_newbahamarama01_small_.jpg',
+                'img/landing/ver2/additionals/small/tiny/artworks/artwork_preloader_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/tiny/home/screenshot_newbahamarama01_big.png'
+            );
+            FaExternalHome.addScreenshot(
+                'img/landing/ver2/additionals/small/tiny/home/screenshot_newbahamarama02_small.jpg',
+                'img/landing/ver2/additionals/small/tiny/artworks/artwork_preloader_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/tiny/home/screenshot_newbahamarama02_big.png'
+            );
+            FaExternalHome.addScreenshot(
+                'img/landing/ver2/additionals/small/tiny/home/screenshot_main_farm_small.jpg',
+                'img/landing/ver2/additionals/small/tiny/artworks/artwork_preloader_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/tiny/home/screenshot_main_farm_big.jpg'
+            );
+            FaExternalHome.addScreenshot(
+                'img/landing/ver2/additionals/small/tiny/home/screenshot_city_small.jpg',
+                'img/landing/ver2/additionals/small/tiny/artworks/artwork_preloader_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/tiny/home/screenshot_city_big.jpg'
+            );
+            FaExternalHome.addScreenshot(
+                'img/landing/ver2/additionals/small/tiny/home/screenshot_wild_meadow_small.jpg',
+                'img/landing/ver2/additionals/small/tiny/artworks/artwork_preloader_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/tiny/home/screenshot_wild_meadow_big.jpg'
+            );
+            FaExternalHome.addScreenshot(
+                'img/landing/ver2/additionals/small/tiny/home/screenshot_magical_glade_small.jpg',
+                'img/landing/ver2/additionals/small/tiny/media/screenshot_magical_glade_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/tiny/home/screenshot_magical_glade_big.jpg'
+            );
+            FaExternalHome.addScreenshot(
+                'img/landing/ver2/additionals/small/tiny/home/screenshot_crafting_city_small.jpg',
+                'img/landing/ver2/additionals/small/tiny/media/screenshot_crafting_city_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/tiny/home/screenshot_crafting_city_big.jpg'
+            );
+            FaExternalHome.addScreenshot(
+                'img/landing/ver2/additionals/small/tiny/home/screenshot_user_02_small.jpg',
+                'img/landing/ver2/additionals/small/tiny/media/screenshot_user_02_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/tiny/home/screenshot_user_02_big.jpg'
+            );
+            FaExternalHome.addScreenshot(
+                'img/landing/ver2/additionals/small/tiny/home/screenshot_user_03_small.jpg',
+                'img/landing/ver2/additionals/small/tiny/media/screenshot_user_03_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/tiny/home/screenshot_user_03_big.jpg'
+            );
+            FaExternalHome.addScreenshot(
+                'img/landing/ver2/additionals/small/tiny/home/screenshot_user_04_small.jpg',
+                'img/landing/ver2/additionals/small/tiny/media/screenshot_user_04_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/tiny/home/screenshot_user_04_big.jpg'
+            );
+            FaExternalHome.addScreenshot(
+                'img/landing/ver2/additionals/small/tiny/home/screenshot_user_05_small.jpg',
+                'img/landing/ver2/additionals/small/tiny/media/screenshot_user_05_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/tiny/home/screenshot_user_05_big.jpg'
+            );
+            FaExternalHome.addScreenshot(
+                'img/landing/ver2/additionals/small/tiny/home/screenshot_user_06_small.jpg',
+                'img/landing/ver2/additionals/small/tiny/media/screenshot_user_06_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/tiny/home/screenshot_user_06_big.jpg'
+            );
+            FaExternalHome.addScreenshot(
+                'img/landing/ver2/additionals/small/tiny/home/screenshot_user_07_small.jpg',
+                'img/landing/ver2/additionals/small/tiny/media/screenshot_user_07_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/tiny/home/screenshot_user_07_big.jpg'
+            );
+            FaExternalHome.addScreenshot(
+                'img/landing/ver2/additionals/small/tiny/home/screenshot_user_08_small.jpg',
+                'img/landing/ver2/additionals/small/tiny/media/screenshot_user_08_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/tiny/home/screenshot_user_08_big.jpg'
+            );
+            FaExternalHome.addScreenshot(
+                'img/landing/ver2/additionals/small/tiny/home/screenshot_user_09_small.jpg',
+                'img/landing/ver2/additionals/small/tiny/media/screenshot_user_09_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/tiny/home/screenshot_user_09_big.jpg'
+            );
+            FaExternalHome.addScreenshot(
+                'img/landing/ver2/additionals/small/tiny/home/screenshot_user_10_small.jpg',
+                'img/landing/ver2/additionals/small/tiny/media/screenshot_user_10_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/tiny/home/screenshot_user_10_big.jpg'
+            );
+            FaExternalHome.addScreenshot(
+                'img/landing/ver2/additionals/small/tiny/home/screenshot_user_11_small.jpg',
+                'img/landing/ver2/additionals/small/tiny/media/screenshot_user_11_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/tiny/home/screenshot_user_11_big.jpg'
+            );
+            FaExternalHome.addScreenshot(
+                'img/landing/ver2/additionals/small/tiny/home/screenshot_user_12_small.jpg',
+                'img/landing/ver2/additionals/small/tiny/media/screenshot_user_12_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/tiny/home/screenshot_user_12_big.jpg'
+            );
+
+            FaExternalHome.addVideo(
+                'img/landing/ver2/additionals/small/tiny/artworks/artwork_preloader_thumbnail.jpg', 'J2l9w4pEZDw'
+            );
+            FaExternalHome.addVideo(
+                'img/landing/ver2/additionals/small/tiny/artworks/artwork_preloader_thumbnail.jpg', 'rPzGheji3Uo'
+            );
+            FaExternalHome.addVideo(
+                'img/landing/ver2/additionals/small/tiny/artworks/artwork_preloader_thumbnail.jpg', '0jnuPD5FMBs'
+            );
+            FaExternalHome.addVideo(
+                'img/landing/ver2/additionals/small/tiny/artworks/artwork_preloader_thumbnail.jpg', '4FwaAvTUbvg'
+            );
+            FaExternalHome.addVideo(
+                'img/landing/ver2/additionals/small/tiny/artworks/artwork_preloader_thumbnail.jpg', '3ll2FdIf0Uw'
+            );
+
+            FaExternalHome.addWallpaper(
+                'img/landing/ver2/additionals/small/tiny/wallpaper/Farmerama_Cats_Wallpaper_1_Thumbnail.jpg',
+                'img/landing/ver2/additionals/big/wallpaper/Farmerama_Cats_Wallpaper_1.jpg'
+            );
+            FaExternalHome.addWallpaper(
+                'img/landing/ver2/additionals/small/tiny/wallpaper/Farmerama_Fishing_Wallpaper_1_Thumbnail.jpg',
+                'img/landing/ver2/additionals/big/wallpaper/Farmerama_Fishing_Wallpaper_1.jpg'
+            );
+            FaExternalHome.addWallpaper(
+                'img/landing/ver2/additionals/small/tiny/wallpaper/Farmerama_Fishing_Wallpaper_2_Thumbnail.jpg',
+                'img/landing/ver2/additionals/big/wallpaper/Farmerama_Fishing_Wallpaper_2.jpg'
+            );
+            FaExternalHome.addWallpaper(
+                'img/landing/ver2/additionals/small/tiny/wallpaper/valentine2015wallpaper_thumb.jpg',
+                'img/landing/ver2/additionals/big/wallpaper/valentine2015wallpaper.jpg'
+            );
+            FaExternalHome.addWallpaper(
+                'img/landing/ver2/additionals/small/tiny/wallpaper/xmas2014_wallpaper_thumbnail.png',
+                'img/landing/ver2/additionals/big/wallpaper/xmas2014_wallpaper.png'
+            );
+            FaExternalHome.addWallpaper(
+                'img/landing/ver2/additionals/small/tiny/wallpaper/hw2014_wallpaper_icon.jpg',
+                'img/landing/ver2/additionals/big/wallpaper/hw2014_wallpaper_final.jpg'
+            );
+            FaExternalHome.addWallpaper(
+                'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_summer2014_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/wallpaper/wallpaper_summer2014.jpg'
+            );
+            FaExternalHome.addWallpaper(
+                'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_valentine2014_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/wallpaper/wallpaper_valentine2014.jpg'
+            );
+            FaExternalHome.addWallpaper(
+                'img/landing/ver2/additionals/small/tiny/wallpaper/small_xmas2013_wallpaper.jpg',
+                'img/landing/ver2/additionals/big/wallpaper/xmas2013_wallpaper_big.jpg'
+            );
+            FaExternalHome.addWallpaper(
+                'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_vitruvian_man_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/wallpaper/wallpaper_vitruvian_man.jpg'
+            );
+            FaExternalHome.addWallpaper(
+                'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_monalisa_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/wallpaper/wallpaper_monalisa.jpg'
+            );
+            FaExternalHome.addWallpaper(
+                'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_escher_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/wallpaper/wallpaper_escher.jpg'
+            );
+            FaExternalHome.addWallpaper(
+                'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_chatnoir_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/wallpaper/wallpaper_chatnoir.jpg'
+            );
+            FaExternalHome.addWallpaper(
+                'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_bunnylin_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/wallpaper/wallpaper_bunnylin.jpg'
+            );
+            FaExternalHome.addWallpaper(
+                'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper-valentine2013_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/wallpaper/wallpaper-valentine2013.jpg'
+            );
+            FaExternalHome.addWallpaper(
+                'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_valentine2013_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/wallpaper/wallpaper_valentine2013.jpg'
+            );
+            FaExternalHome.addWallpaper(
+                'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_halloween2012_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/wallpaper/wallpaper_halloween2012.jpg'
+            );
+            FaExternalHome.addWallpaper(
+                'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_ufo01_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/wallpaper/wallpaper_ufo01.jpg'
+            );
+            FaExternalHome.addWallpaper(
+                'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_ufo02_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/wallpaper/wallpaper_ufo02.jpg'
+            );
+            FaExternalHome.addWallpaper(
+                'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_jahrmarkt01_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/wallpaper/wallpaper_jahrmarkt01.jpg'
+            );
+            FaExternalHome.addWallpaper(
+                'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_jahrmarkt02_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/wallpaper/wallpaper_jahrmarkt02.jpg'
+            );
+            FaExternalHome.addWallpaper(
+                'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_jahrmarkt04_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/wallpaper/wallpaper_jahrmarkt04.jpg'
+            );
+            FaExternalHome.addWallpaper(
+                'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_jahrmarkt05_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/wallpaper/wallpaper_jahrmarkt05.jpg'
+            );
+            FaExternalHome.addWallpaper(
+                'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_valentine_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/wallpaper/wallpaper_valentine.jpg'
+            );
+            FaExternalHome.addWallpaper(
+                'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_preloader_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/wallpaper/wallpaper_preloader.jpg'
+            );
+            FaExternalHome.addWallpaper(
+                'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_01_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/wallpaper/wallpaper_01.jpg'
+            );
+            FaExternalHome.addWallpaper(
+                'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_02_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/wallpaper/wallpaper_02.jpg'
+            );
+            FaExternalHome.addWallpaper(
+                'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_03_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/wallpaper/wallpaper_03.jpg'
+            );
+            FaExternalHome.addWallpaper(
+                'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_04_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/wallpaper/wallpaper_04.jpg'
+            );
+            FaExternalHome.addWallpaper(
+                'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_05_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/wallpaper/wallpaper_05.jpg'
+            );
+            FaExternalHome.addWallpaper(
+                'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_06_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/wallpaper/wallpaper_06.jpg'
+            );
+            FaExternalHome.addWallpaper(
+                'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_advenskalender_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/wallpaper/wallpaper_advenskalender.jpg'
+            );
+            FaExternalHome.addWallpaper(
+                'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_babybunnies_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/wallpaper/wallpaper_babybunnies.jpg'
+            );
+            FaExternalHome.addWallpaper(
+                'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_Fledermausbabys_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/wallpaper/wallpaper_Fledermausbabys.jpg'
+            );
+            FaExternalHome.addWallpaper(
+                'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_Nikolaus_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/wallpaper/wallpaper_Nikolaus.jpg'
+            );
+            FaExternalHome.addWallpaper(
+                'img/landing/ver2/additionals/small/tiny/wallpaper/wallpaper_oscar2012_thumbnail.jpg',
+                'img/landing/ver2/additionals/big/wallpaper/wallpaper_oscar2012.jpg'
+            );
+
+            FaExternalHome.init();
+
+
+
+
+            if ($('#owl_winking')) {
+                swfobject.embedSWF(
+                    '/swf/landing/bahamarama/parrot.swf?__cv=cab56d81c07d5d31536cf8d1ff4c2d00',
+                    'owl_winking',
+                    '273',
+                    '266',
+                    '9.0.0',
+                    '/swf/expressInstall.swf?__cv=7b65fbfaec8b2955090389af60646e00',
+                    null,
+                    {
+                        wmode: "transparent"
+                    }
+                );
+            }
+        });
+
+        $(window).on('load', function () {
+            FaExternalHome.preloadImages();
+        })
     </script>
 
     <!-- affiliateEndTag -->
     <!-- BPID -->
-    <script language="javascript">window.bpid=window.bpid||{};window.bpid.callbacks=window.bpid.callbacks||[];window.bpid.callbacks.push(function(bpid) {document.cookie="__bpid="+bpid+";path=/;domain=.farmerama.com;max-age=31536000;secure;samesite=none;";if (bpid != "664af669bCAyQKGHWJsvaAXULHToWEoB") {try {var xhr = new XMLHttpRequest();xhr.open("GET", "\/GameAPI.php?action=core.bpid&bpid="+bpid, true);xhr.send(null);} catch(e) {}}});</script>
+    <script language="javascript">window.bpid = window.bpid || {}; window.bpid.callbacks = window.bpid.callbacks || []; window.bpid.callbacks.push(function (bpid) { document.cookie = "__bpid=" + bpid + ";path=/;domain=.farmerama.com;max-age=31536000;secure;samesite=none;"; if (bpid != "664af669bCAyQKGHWJsvaAXULHToWEoB") { try { var xhr = new XMLHttpRequest(); xhr.open("GET", "\/GameAPI.php?action=core.bpid&bpid=" + bpid, true); xhr.send(null); } catch (e) { } } });</script>
     <script language="javascript" src="//assets.bpsecure.com/bpid/bpid.js?ts=476721" defer="defer"></script><!-- /BPID -->
 
     <script type="text/javascript">
-        $(window).on('load', function() {
+        $(window).on('load', function () {
             FaCommon.init();
             if ($('div.bgcdw_errors_flash:visible').length) {
-                $('div#recaptcha_image').css('border-color','red');
+                $('div#recaptcha_image').css('border-color', 'red');
             }
-        }).on('beforeunload', function() {
+        }).on('beforeunload', function () {
             FaCommon.positionElements();
         });
 
     </script>
+
     <style>
-     
+        #box-story {
+            display: none;
+        }
+
+        #image-button {
+            cursor: pointer;
+            position: absolute;
+            left: 680px;
+            top: -577px;
+            width: 158px;
+            height: 158px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #hide-content-btn {
+            width: 24px;
+            height: 24px;
+            border: none;
+         
+            background-repeat: no-repeat;
+            cursor: pointer;
+            float: right;
+        }
+        #hide-content-btn {
+            cursor: pointer;
+            width: 52px;
+            height: 40px;
+            left: 208px;
+            position: relative;
+        }
+
+            #hide-content-btn:hover {
+                opacity: 0.8;
+            }
+        .box-story-custom {
+            position: relative;
+            left: 266px;
+            top: -477px;
+        }
+        .story-inner-custom {
+            position: relative !important;
+            left: 332px !important;
+            top: -380px !important;
+        }
+        .box-facebook {
+            display: none;
+            left: 238px;
+            top: -155px;
+        }
+        #showButton {
+            cursor: pointer;
+            position: absolute;
+            left: 880px;
+            top: -579px;
+            width: 158px;
+            height: 158px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #hide-facebook-btn {
+            cursor: pointer;
+            width: 52px;
+            height: 40px;
+            left: 266px;
+            position: relative;
+        }
+        .box-Facebook-custom {
+            position: relative;
+            left: 458px;
+            top: -425px;
+        }
+        .box-facebook-custom {
+            top: -251px !important;
+            left: 311px !important;
+        }
     </style>
+
+    <script>
+        document.getElementById('image-button').addEventListener('click', function () {
+            document.getElementById('box-story').style.display = 'block';
+        });
+
+        document.getElementById('hide-content-btn').addEventListener('click', function () {
+            document.getElementById('box-story').style.display = 'none';
+        });
+        document.getElementById('showButton').addEventListener('click', function () {
+            document.getElementById('box-facebook').style.display = 'block';
+        });
+        document.getElementById('hide-facebook-btn').addEventListener('click', function () {
+            document.getElementById('box-facebook').style.display = 'none';
+        });
+
+    </script>
 
 </body>
 </html>
