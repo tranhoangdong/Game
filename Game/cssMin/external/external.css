@@ -25,11 +25,11 @@ input.placeholder {
 
 #story-inner {
     position: relative;
-    top: -343px;
-    left: 144px;
+    top: -347px;
+    left: 179px;
     z-index: 10;
-    width: 692px;
-    height: 353px;
+    width: 685px !important;
+    height: 318px !important;
     color: #f1ddba;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -1262,7 +1262,7 @@ body #tile_right {
     #externalHome .fbconnect {
         position: absolute;
         top: 5px;
-        left: 429px
+        left: 500px
     }
 
     #externalHome .reg .typo-funny-game {
@@ -1405,7 +1405,7 @@ body #tile_right {
         position: relative;
         width: 934px;
         height: 91px;
-        left: 24px;
+        left: 95px;
         top: -579px;
         z-index: 999;
     }
@@ -1476,17 +1476,20 @@ body #tile_right {
     #externalHome .content .tour {
         height: 569px;
         position: relative;
-        top: -409px;
+        top: -340px;
+        left: 79px;
     }
 
     #externalHome .content .media {
         height: 1271px;
         top: -401px;
+        left: 96px;
     }
 
     #externalHome .content .community {
         height: 375px;
         top: -400px;
+        left: 96px;
     }
 
     #externalHome .content .title {
@@ -1681,24 +1684,25 @@ body #tile_right {
     
 }
 
-        #externalHome .content .home .box-facebook .title {
-            width: 286px;
-            left: 106px
-        }
+    #externalHome .content .home .box-facebook .title {
+        width: 286px;
+        left: 247px;
+        top: -6px;
+    }
 
         #externalHome .content .home .box-facebook .inner {
             position: relative
         }
 
-        #externalHome .content .home .box-facebook .wrapper {
-            background-color: white;
-            height: 250px;
-            left: 84px;
-            position: absolute;
-            top: 34px;
-            width: 340px;
-            text-align: center
-        }
+    #externalHome .content .home .box-facebook .wrapper {
+        background-color: white;
+        height: 250px;
+        left: 248px;
+        position: absolute;
+        top: -688px;
+        width: 340px;
+        text-align: center;
+    }
 
         #externalHome .content .home .box-facebook iframe {
             border: 0;
@@ -2957,7 +2961,7 @@ body #tile_right {
     width: 861px;
     height: 520px;
     background-position: -2px -531px;
-    top: 245px;
+    top: 320px;
 }
 
 .l_btn_close {
@@ -2976,7 +2980,7 @@ body #tile_right {
     width: 872px;
     height: 527px;
     background-position: -2px -2px;
-    top: 271px;
+    top: 332px;
 }
 
 .l_pwrecovery {
