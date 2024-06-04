@@ -306,7 +306,7 @@
     <Content Include="img\screenshot_newbahamarama02_thumbnail.jpg" />
     <Content Include="img\typo_header_facebook.png" />
     <Content Include="img\typo_nav_community.png" />
-    <Content Include="jsMin\common\common.js" />
+    <None Include="jsMin\common\common.json" />
     <Content Include="jsMin\external\external.js" />
     <Content Include="jsMin\swfobject.js" />
     <Content Include="Scripts\metro.js" />

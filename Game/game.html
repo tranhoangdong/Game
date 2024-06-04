@@ -152,7 +152,7 @@
                         </form>
                     </div>
                 </div>
-
+                 
 
             </div>
 
@@ -173,7 +173,7 @@
 
                         <div class="inner">
                             <div class="thumbnail thumbnail-img"></div>
-                            <div class="thumbnail thumbnail-play" onclick="FaExternalHome.showLayerVideo(0);"></div>
+                            <div class="thumbnail thumbnail-play " onclick="FaExternalHome.showLayerVideo(0);" id="thumbnail-play-custom"></div>
                         </div>
                     </div>
 
@@ -980,27 +980,100 @@
         #Image-facebook {
             position: relative;
             top: 68px;
-            z-index: 111;
+            z-index: 111 ;
         }
         }
     </style>
 
     <script>
+          // story button
+        document.addEventListener("DOMContentLoaded", function () {
+            var imageButton = document.getElementById('image-button');
+            var hideContentBtn = document.getElementById('hide-content-btn');
+            var boxStory = document.getElementById('box-story');
+            var boxFacebook = document.getElementById('box-facebook');
+            var layerVideo = document.getElementById('layer-video');
 
-        document.getElementById('image-button').addEventListener('click', function () {
-            document.getElementById('box-story').style.display = 'block';
+            if (imageButton) {
+                imageButton.addEventListener('click', function (event) {
+                    boxStory.style.display = 'block';
+                    boxFacebook.style.display = 'none';
+                    layerVideo.style.display = 'none';
+                    event.stopPropagation(); // Ngăn chặn sự kiện click lan đến document
+                });
+            }
+
+            if (hideContentBtn) {
+                hideContentBtn.addEventListener('click', function (event) {
+                    boxStory.style.display = 'none';
+                    event.stopPropagation(); // Ngăn chặn sự kiện click lan đến document
+                });
+            }
+
+            //document.addEventListener('click', function (event) {
+            //    if (event.target !== imageButton && event.target !== hideContentBtn && event.target !== boxStory) {
+            //        boxStory.style.display = 'none';
+            //    }
+            //});
+            document.addEventListener('click', function (event) {
+                if (event.target !== imageButton && event.target !== hideContentBtn && event.target !== boxStory && event.target !== showFacebookButton && event.target !== boxFacebook) {
+                    boxStory.style.display = 'none';
+                    boxFacebook.style.display = 'none';
+                }
+            });
+            // Ngăn chặn sự kiện click trên boxStory để nó không bị ẩn khi nhấp vào chính nó
+            boxStory.addEventListener('click', function (event) {
+                event.stopPropagation();
+            });
         });
 
-        document.getElementById('hide-content-btn').addEventListener('click', function () {
-            document.getElementById('box-story').style.display = 'none';
-        });
-        document.getElementById('showButton').addEventListener('click', function () {
-            document.getElementById('box-facebook').style.display = 'block';
-        });
-        document.getElementById('hide-facebook-btn').addEventListener('click', function () {
-            document.getElementById('box-facebook').style.display = 'none';
-        });
+        // face book button
+        document.addEventListener("DOMContentLoaded", function () {
+            var showButton = document.getElementById('showButton');
+            var hideFacebookBtn = document.getElementById('hide-facebook-btn');
+            var boxFacebook = document.getElementById('box-facebook');
+            var boxStory = document.getElementById('box-story');
+            var layerVideo = document.getElementById('layer-video');
 
+            if (showButton) {
+                showButton.addEventListener('click', function (event) {
+                    boxFacebook.style.display = 'block';
+                    boxStory.style.display = 'none';
+                    layerVideo.style.display = 'none';
+                    event.stopPropagation(); // Ngăn chặn sự kiện click lan đến document
+                });
+            }
+
+            if (hideFacebookBtn) {
+                hideFacebookBtn.addEventListener('click', function (event) {
+                    boxFacebook.style.display = 'none';
+                    event.stopPropagation(); // Ngăn chặn sự kiện click lan đến document
+                });
+            }
+            // Ngăn chặn sự kiện click trên boxFacebook để nó không bị ẩn khi nhấp vào chính nó
+            boxFacebook.addEventListener('click', function (event) {
+                event.stopPropagation();
+            });
+        });
+        // trailler button
+        document.addEventListener("DOMContentLoaded", function () {
+            var thumbnail = document.getElementById("thumbnail-play-custom");
+            var layerVideo = document.getElementById("layer-video");
+
+            if (thumbnail) {
+                thumbnail.addEventListener('click', function (event) {
+                    layerVideo.style.display = 'block';
+                    document.getElementById('box-story').style.display = 'none';
+                    document.getElementById('box-facebook').style.display = 'none';
+                   event.stopPropagation(); // Ngăn chặn sự kiện click lan đến document
+                });
+            }
+            
+            //layerVideo.addEventListener('click', function (event) {
+            //    event.stopPropagation();
+            //});
+        });
+       
     </script>
 
 </body>
